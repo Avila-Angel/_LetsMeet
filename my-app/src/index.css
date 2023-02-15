@@ -1,0 +1,313 @@
+@import url('https://fonts.googleapis.com/css?family=Exo:400,700');
+
+*{
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+}
+
+body1{
+    font-family: 'Exo', sans-serif;
+    display: grid;
+    place-items: center;
+    margin: 0;
+}
+
+
+.context {
+    width: 100%;
+    position: absolute;
+
+}
+
+.context h1{
+    text-align: center;
+    color: #fff;
+    font-size: 50px;
+}
+
+
+.area{
+    background: #7CB9E8;  
+    background: -webkit-linear-gradient(to left, #72A0C1, #7CB9E8);  
+    width: 100%;
+    height:100vh;
+    
+   
+}
+
+.circles{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    overflow: hidden;
+}
+
+.circles li{
+    position: absolute;
+    display: block;
+    list-style: none;
+    width: 20px;
+    height: 20px;
+    background: rgba(255, 255, 255, 0.2);
+    animation: animate 25s linear infinite;
+    bottom: -150px;
+    
+}
+
+.circles li:nth-child(1){
+    left: 25%;
+    width: 80px;
+    height: 80px;
+    animation-delay: 0s;
+}
+
+
+.circles li:nth-child(2){
+    left: 10%;
+    width: 20px;
+    height: 20px;
+    animation-delay: 2s;
+    animation-duration: 12s;
+}
+
+.circles li:nth-child(3){
+    left: 70%;
+    width: 20px;
+    height: 20px;
+    animation-delay: 4s;
+}
+
+.circles li:nth-child(4){
+    left: 40%;
+    width: 60px;
+    height: 60px;
+    animation-delay: 0s;
+    animation-duration: 18s;
+}
+
+.circles li:nth-child(5){
+    left: 65%;
+    width: 20px;
+    height: 20px;
+    animation-delay: 0s;
+}
+
+.circles li:nth-child(6){
+    left: 75%;
+    width: 110px;
+    height: 110px;
+    animation-delay: 3s;
+}
+
+.circles li:nth-child(7){
+    left: 35%;
+    width: 150px;
+    height: 150px;
+    animation-delay: 7s;
+}
+
+.circles li:nth-child(8){
+    left: 50%;
+    width: 25px;
+    height: 25px;
+    animation-delay: 15s;
+    animation-duration: 45s;
+}
+
+.circles li:nth-child(9){
+    left: 20%;
+    width: 15px;
+    height: 15px;
+    animation-delay: 2s;
+    animation-duration: 35s;
+}
+
+.circles li:nth-child(10){
+    left: 85%;
+    width: 150px;
+    height: 150px;
+    animation-delay: 0s;
+    animation-duration: 11s;
+}
+
+
+
+@keyframes animate {
+
+    0%{
+        transform: translateY(0) rotate(0deg);
+        opacity: 1;
+        border-radius: 0;
+    }
+
+    100%{
+        transform: translateY(-1000px) rotate(720deg);
+        opacity: 0;
+        border-radius: 50%;
+    }
+
+}
+
+
+#accountLogin {
+  padding-bottom: 60px;
+}
+
+
+
+button {
+    background: transparent;
+    border: 0;
+    cursor: pointer;
+}
+  
+.control {
+    border: 0;
+    border-radius: 8px;
+    outline: none;
+    width: 100%;
+    height: 56px;
+    padding: 0 16px;
+    background: transparent;
+    border-radius: 6px;
+    border: 1px solid rgba(255, 255, 255, 0.2);
+    color: #5a4f79;
+    margin: 8px 0;
+    font-family: inherit;
+    text-align: left;
+    font-size: 16px;
+    transition: 0.4s;
+}
+
+.logoutBtn {
+    cursor: pointer;
+    width: 25%;
+    height: 30px;
+    margin-top: 30px;
+    padding: 0 16px;
+    background: #D9D9D9;
+    border-radius: 10px;
+    color: #FFFFFF;
+    font-family: inherit;
+    font-size: 1rem;
+    font-weight: 600;
+    text-align: center;
+}
+
+.welcome {
+    color: #FFFFFF;
+    margin-top: 15px;
+    font-size: 20px;
+}
+  
+.login-card {
+    width: 400px;
+    padding: 50px 30px 64px;
+    border-radius: 1.25rem;
+    background: rgba(0, 0, 0, 0.5);
+    text-align: center;
+    backdrop-filter: blur(10px);
+    margin: 100px auto 40px;
+}
+  
+.login-card > h2 {
+    font-size: 36px;
+    font-weight: 600;
+    margin: 0 0 6px;
+    color: #f9f9f9;
+}
+  
+.login-card img {
+    width: 120px;
+    border-radius: 50%;
+    border: 1px solid rgba(255, 255, 255, 0.4);
+    padding: 5px;
+}
+  
+.login-card > h3 {
+    color: #837f90;
+    margin: 0 0 40px;
+    font-weight: 500;
+    font-size: 1rem;
+}
+
+.login-card > #google {
+  display: flex;
+  width: 800px;
+  margin-left: 45px;
+}
+
+
+.login-card2 {
+  width: 800px;
+  padding: 50px 30px 64px;
+  border-radius: 1.25rem;
+  background: rgba(0, 0, 0, 0.5);
+  text-align: center;
+  backdrop-filter: blur(10px);
+  margin: 100px auto 40px;
+}
+
+.login-card2 > h2 {
+  font-size: 36px;
+  font-weight: 600;
+  margin: 0 0 6px;
+  color: #f9f9f9;
+}
+
+.login-card2 img {
+  width: 120px;
+  border-radius: 50%;
+  border: 1px solid rgba(255, 255, 255, 0.4);
+  padding: 5px;
+}
+
+.login-card2 > h3 {
+  color: #837f90;
+  margin: 0 0 40px;
+  font-weight: 500;
+  font-size: 1rem;
+}
+
+
+
+
+
+
+.group-card {
+  width: 800px;
+  height: 400px;
+  padding: 50px 30px 64px;
+  border-radius: 1.25rem;
+  background: rgba(0, 0, 0, 0.5);
+  text-align: center;
+  backdrop-filter: blur(10px);
+  margin: 0px auto;
+}
+
+.group {
+  display: inline-block;
+  color: #f9f9f9;
+  margin-bottom: 20px;
+  margin-left: 0px;
+  margin-right: 340px;
+  font-size: 20px;
+}
+
+.groupBtn {
+  cursor: pointer;
+  width: 15%;
+  height: 30px;
+  margin-bottom: 20px;
+  padding: 0 16px;
+  background: #D9D9D9;
+  border-radius: 10px;
+  color: #FFFFFF;
+  font-family: inherit;
+  font-size: 1rem;
+  font-weight: 600;
+  text-align: center;
+}
