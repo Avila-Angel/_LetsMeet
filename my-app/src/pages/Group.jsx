@@ -13,6 +13,14 @@ const Group = () => {
     }
   };
 
+  const goVideo = async () => {
+    try {
+      navigate('/video')
+    } catch (error) {
+      console.log(error);
+    }
+  };
+
   return (
     <body1>
       <div class="area" >
@@ -31,9 +39,8 @@ const Group = () => {
             
       </div >
       <div>
-              <button onClick={goBack} class="logoutBtn">
-              Back
-              </button>
+              <button onClick={goBack} class="logoutBtn" width="30px">Back</button>
+              <button onClick={goVideo} class="logoutBtn" width="30px">Video Call</button>
             </div>
     </body1>
   )
