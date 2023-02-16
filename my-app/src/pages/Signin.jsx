@@ -45,7 +45,7 @@ const Signin = () => {
                         <div class="login-card">
                             <h2>Welcome to LetsMeet</h2>
                             <img
-                            src="handShakeLogo.png"
+                            src="handShakeLogo.png" alt="logo"
                             />
                             <h2>Login</h2>
                             <h3>Enter your credentials</h3>

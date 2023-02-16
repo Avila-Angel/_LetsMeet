@@ -1,12 +1,22 @@
 import React from 'react';
 import { UserAuth } from '../context/AuthContext';
+import { useNavigate } from 'react-router-dom';
 
 const Account = () => {
   const { logOut, user } = UserAuth();
+  const navigate = useNavigate();
 
   const handleSignOut = async () => {
     try {
       await logOut();
+    } catch (error) {
+      console.log(error);
+    }
+  };
+
+  const goToGroup = async () => {
+    try {
+      navigate('/group')
     } catch (error) {
       console.log(error);
     }
@@ -29,7 +39,7 @@ const Account = () => {
                         </ul>
             
         <div class="login-card2" id="accountLogin">
-            <img src="handShakeLogo.png" />
+            <img src="handShakeLogo.png" alt="logo" />
             <div>
               <p class="welcome">Welcome, {user?.displayName}</p>
               <button onClick={handleSignOut} class="logoutBtn">
@@ -41,31 +51,31 @@ const Account = () => {
         <div class="group-card">
           <div>
             <p class="group">Group 1</p>
-            <button class="groupBtn">Enter</button>
+            <button onClick={goToGroup} class="groupBtn">Enter</button>
           </div>
           <div>
             <p class="group">Group 2</p>
-            <button class="groupBtn">Enter</button>
+            <button onClick={goToGroup} class="groupBtn">Enter</button>
           </div>
           <div>
             <p class="group">Group 3</p>
-            <button class="groupBtn">Enter</button>
+            <button onClick={goToGroup} class="groupBtn">Enter</button>
           </div>
           <div>
             <p class="group">Group 4</p>
-            <button class="groupBtn">Enter</button>
+            <button onClick={goToGroup} class="groupBtn">Enter</button>
           </div>
           <div>
             <p class="group">Group 5</p>
-            <button class="groupBtn">Enter</button>
+            <button onClick={goToGroup} class="groupBtn">Enter</button>
           </div>
           <div>
             <p class="group">Group 6</p>
-            <button class="groupBtn">Enter</button>
+            <button onClick={goToGroup} class="groupBtn">Enter</button>
           </div>
           <div>
             <p class="group">Group 7</p>
-            <button class="groupBtn">Enter</button>
+            <button onClick={goToGroup} class="groupBtn">Enter</button>
           </div>
         </div>
       </div >
