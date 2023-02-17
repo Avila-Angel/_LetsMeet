@@ -1,6 +1,5 @@
 # Welcome to LetsMeet
-<img src="./client/public/images/StudentTaskMateImage.png" />
-A video chat platform
+<img src="./my-app/public/letsMeetLogo.png" width="1010px" />
 
 ## Table of contents
 * [General info](#general-info)
@@ -9,12 +8,13 @@ A video chat platform
 * [Figma Design](#figma-design)
 * [Video Demonstration](#video-demonstration)
 * [Setup](#setup)
+* [Learn More](#learn-more)
 
 
 
 
 ## General info
-LetsMeet allows users to create and login through the web application using their gmail, which will then take them to the home page. On the homepage, users can enter private groups where they can view that specific groups schedule and events. Within that group, users can also create/join a live video chat stream where they're allowed to communicate with others who join that stream.
+LetsMeet is a video chat platform allows users to create and login through the web application using their gmail, which will then take them to the home page. On the homepage, users can enter private groups where they can view that specific groups schedule and events. Within that group, users can also create/join a live video chat stream where they're allowed to communicate with others who join that stream.
 
 ## Technologies
 This project is created with:
@@ -36,7 +36,10 @@ This project is created with:
 ## Figma Design
 Blueprint:
 <div>
-  
+  <img src="./my-app/public/letsMeetFigmaLogin.png" />
+  <img src="./my-app/public/letsMeetFigmaRegister.png" />
+  <img src="./my-app/public/letsMeetFigmaHome.png" />
+  <img src="./my-app/public/letsMeetFigmaGroup.png" />
 </div>
 
 ## Video Demonstration
