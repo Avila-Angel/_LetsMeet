@@ -1,8 +1,48 @@
-# Getting Started with Create React App
+# Welcome to LetsMeet
+<img src="./client/public/images/StudentTaskMateImage.png" />
+A video chat platform
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+## Table of contents
+* [General info](#general-info)
+* [Technologies](#technologies)
+* [Functionality](#functionality)
+* [Figma Design](#figma-design)
+* [Video Demonstration](#video-demonstration)
+* [Setup](#setup)
 
-## Available Scripts
+
+
+
+## General info
+LetsMeet allows users to create and login through the web application using their gmail, which will then take them to the home page. On the homepage, users can enter private groups where they can view that specific groups schedule and events. Within that group, users can also create/join a live video chat stream where they're allowed to communicate with others who join that stream.
+
+## Technologies
+This project is created with:
+* React
+* Node
+* Firebase
+* Agora
+* Figma 
+
+## Functionality
+<b />
+
+* Login Page - demonstrates Google's user authentication feature from Firebase that allows users to login/register with their gmail credentials 
+* Home Page - displays the app logo, your name that is associated with your gmail account, a functional logout button that reroutes you to the sign in page, and a list of groups that you can enter that will route you to the associated group page
+* Group Page - displays a functional calendar that you can traverse through, the date chosen from the calendar, any events/meetings going on today, a back button that reroutes you to the Home Page, and a Video Call button that reroutes you to the video call page
+* Video Call Page - contains a "Join Stream" button that will take you to the private newly created video stream
+* Video Stream Page - connects to the users camera and mic allowing for multiple users to be shown, allows users to turn on/off their camera and mic, as well as leave the stream
+
+## Figma Design
+Blueprint:
+<div>
+  
+</div>
+
+## Video Demonstration
+![LetsMeet Video]()
+
+## Setup
 
 In the project directory, you can run:
 
