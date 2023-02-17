@@ -1,19 +1,17 @@
-
 import React from 'react';
 import { Route, Routes } from 'react-router-dom';
-import Navbar from './components/Navbar';
 import Protected from './components/Protected';
 import { AuthContextProvider } from './context/AuthContext';
 import Account from './pages/Account';
 import Group from './pages/Group';
 import Signin from './pages/Signin';
-import Video from './pages/Video';
+import Videos from './pages/Videos';
+import VideoApp from './components/VideoApp';
 
 function App() {
   return (
     <div>
-      <AuthContextProvider>
-        <Navbar />
+      <AuthContextProvider>    
         <Routes>
           <Route path='/' element={<Signin />} />
           
@@ -26,7 +24,7 @@ function App() {
             }
           />
           <Route path='/group' element={<Group />} />
-          <Route path='/video' element={<Video />} />
+          <Route path='/video' element={<Videos />} />
         </Routes>
       </AuthContextProvider>
     </div>

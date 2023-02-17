@@ -23,9 +23,9 @@ const Account = () => {
   };
 
   return (
-    <body1>
-      <div class="area" >
-                        <ul class="circles">
+    <div className='body1'>
+      <div className="area" >
+                        <ul className="circles">
                                 <li></li>
                                 <li></li>
                                 <li></li>
@@ -38,48 +38,48 @@ const Account = () => {
                                 <li></li>
                         </ul>
             
-        <div class="login-card2" id="accountLogin">
+        <div className="login-card2" id="accountLogin">
             <img src="handShakeLogo.png" alt="logo" />
             <div>
-              <p class="welcome">Welcome, {user?.displayName}</p>
-              <button onClick={handleSignOut} class="logoutBtn">
+              <p className="welcome">Welcome, {user?.displayName}</p>
+              <button onClick={handleSignOut} className="logoutBtn">
                 Logout
               </button>
             </div>
           
         </div>
-        <div class="group-card">
+        <div className="group-card">
           <div>
-            <p class="group">Group 1</p>
-            <button onClick={goToGroup} class="groupBtn">Enter</button>
+            <p className="group">Group 1</p>
+            <button onClick={goToGroup} className="groupBtn">Enter</button>
           </div>
           <div>
-            <p class="group">Group 2</p>
-            <button onClick={goToGroup} class="groupBtn">Enter</button>
+            <p className="group">Group 2</p>
+            <button onClick={goToGroup} className="groupBtn">Enter</button>
           </div>
           <div>
-            <p class="group">Group 3</p>
-            <button onClick={goToGroup} class="groupBtn">Enter</button>
+            <p className="group">Group 3</p>
+            <button onClick={goToGroup} className="groupBtn">Enter</button>
           </div>
           <div>
-            <p class="group">Group 4</p>
-            <button onClick={goToGroup} class="groupBtn">Enter</button>
+            <p className="group">Group 4</p>
+            <button onClick={goToGroup} className="groupBtn">Enter</button>
           </div>
           <div>
-            <p class="group">Group 5</p>
-            <button onClick={goToGroup} class="groupBtn">Enter</button>
+            <p className="group">Group 5</p>
+            <button onClick={goToGroup} className="groupBtn">Enter</button>
           </div>
           <div>
-            <p class="group">Group 6</p>
-            <button onClick={goToGroup} class="groupBtn">Enter</button>
+            <p className="group">Group 6</p>
+            <button onClick={goToGroup} className="groupBtn">Enter</button>
           </div>
           <div>
-            <p class="group">Group 7</p>
-            <button onClick={goToGroup} class="groupBtn">Enter</button>
+            <p className="group">Group 7</p>
+            <button onClick={goToGroup} className="groupBtn">Enter</button>
           </div>
         </div>
       </div >
-    </body1>
+    </div>
   );
 };
 

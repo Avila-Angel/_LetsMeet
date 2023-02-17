@@ -23,14 +23,14 @@ const Signin = () => {
   }, [user]);
 
   return (
-        <body1>
-            <div class="context">
+        <div className='body1'>
+            <div className="context">
                 
             </div>
         
         
-            <div class="area" >
-                        <ul class="circles">
+            <div className="area" >
+                        <ul className="circles">
                                 <li></li>
                                 <li></li>
                                 <li></li>
@@ -42,7 +42,7 @@ const Signin = () => {
                                 <li></li>
                                 <li></li>
                         </ul>
-                        <div class="login-card">
+                        <div className="login-card">
                             <h2>Welcome to LetsMeet</h2>
                             <img
                             src="handShakeLogo.png" alt="logo"
@@ -56,7 +56,7 @@ const Signin = () => {
                         </div>
             </div >
 
-        </body1>
+        </div>
   );
 };
 

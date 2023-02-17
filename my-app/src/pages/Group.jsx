@@ -1,5 +1,6 @@
 import React from 'react';
 import { useNavigate } from 'react-router-dom';
+import CalendarApp from '../CalendarApp';
 
 
 const Group = () => {
@@ -22,9 +23,9 @@ const Group = () => {
   };
 
   return (
-    <body1>
-      <div class="area" >
-                        <ul class="circles">
+    <div className='body1'>
+      <div className="area2" >
+                        <ul className="circles">
                                 <li></li>
                                 <li></li>
                                 <li></li>
@@ -37,12 +38,31 @@ const Group = () => {
                                 <li></li>
                         </ul>
             
+        <br></br>
+        <br></br>
+        <br></br>
+        <br></br>
+        <br></br>
+
+        <div className="group-card2">
+          <div className="calendar">
+            <CalendarApp />
+          </div>
+          
+          <br></br>
+
+          <div>
+            <span>
+              <button onClick={goBack} className="groupBtn">Back</button>
+            </span>
+            <span>
+              <button onClick={goVideo} className="groupBtn">Video Call</button>
+            </span>
+          </div>
+
+        </div>
       </div >
-      <div>
-              <button onClick={goBack} class="logoutBtn" width="30px">Back</button>
-              <button onClick={goVideo} class="logoutBtn" width="30px">Video Call</button>
-            </div>
-    </body1>
+  </div>
   )
 }
 
