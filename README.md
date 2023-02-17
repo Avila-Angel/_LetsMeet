@@ -43,7 +43,7 @@ Blueprint:
 </div>
 
 ## Video Demonstration
-![LetsMeet Video]()
+![LetsMeet Video](/my-app/public/letsMeet.gif)
 
 ## Setup
 
